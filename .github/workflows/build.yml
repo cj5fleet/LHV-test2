@@ -4,10 +4,11 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
+    run:
+      echo " This is my secret ${{secret.LHV_SECRET}} "
     steps:
     - uses: actions/checkout@v2
-    - name: Build
-      echo " This is my secret ${{secret.LHV_SECRET}} "
+    - name: Buil
       uses: docker/build-push-action@v1
       with:
         push: false
