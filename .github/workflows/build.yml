@@ -7,7 +7,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build
-      echo " This is my secret ${{secret.lhv-secret}} "
+      echo " This is my secret ${{secret.LHV_SECRET}} "
       uses: docker/build-push-action@v1
       with:
         push: false
